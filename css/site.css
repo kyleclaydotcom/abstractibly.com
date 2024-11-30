@@ -16,3 +16,94 @@ h6,
     font-weight: 700;
 }
 
+.btn-primary {
+    background: #522DBA;
+    border-color: #522DBA;
+}
+
+    .btn-primary:hover, .btn-primary:focus {
+        background: #2C2833;
+        border-color: #fff;
+    }
+
+    .btn-primary:disabled {
+        background: #522DBA;
+        border-color: #522DBA;
+    }
+
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        background-color: #522DBA;
+    }
+
+.navbar {
+    background: #fff;
+}
+
+.nav-link {
+    color: #2C2833;
+}
+
+    .nav-link:hover, .nav-link:focus {
+        color: #522DBA;
+    }
+
+#About {
+    background: #522DBA;
+    padding: 324px 0 150px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+    #About h1 {
+        color: #B9B7FF;
+    }
+
+        #About h1:before {
+            content:'';
+            display: block;
+            width: 300px;
+            height: 598px;
+            background-image: url(../images/Abstractibly_PlaneElement.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: absolute;
+            right: 100%;
+            top: -125px;
+        }
+
+    #About p {
+        color: #fff;
+    }
+
+#Projects {
+    margin-bottom: 100px;
+}
+
+#Contact {
+    background: #2C2833;
+    padding: 100px 0;
+}
+
+    #Contact img {
+        box-shadow: -10px -10px 0 #B9B7FF;
+        margin-bottom: 20px;
+    }
+
+    #Contact .image h4 {
+        color: #fff;
+        text-align: center;
+    }
+
+    #Contact .image p {
+        color: #999;
+        text-align: center;
+    }
+
+    #Contact .text h2 {
+        color: #B9B7FF;
+    }
+
+    #Contact .text p {
+        color: #fff;
+    }
