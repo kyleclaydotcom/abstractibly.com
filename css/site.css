@@ -39,6 +39,14 @@ h6,
     background: #fff;
 }
 
+ul.nav {
+    display: none;
+}
+
+.navbar-brand {
+    margin: auto;
+}
+
 .nav-link {
     color: #2C2833;
 }
@@ -47,37 +55,84 @@ h6,
         color: #522DBA;
     }
 
-#About {
-    background: #522DBA;
-    padding: 324px 0 150px;
-    overflow: hidden;
-    margin-bottom: 100px;
+@media (min-width: 768px) {
+    ul.nav {
+        display: flex;
+    }
+
+    .navbar-brand {
+        margin: 0;
+    }
 }
 
-    #About h1 {
-        color: #B9B7FF;
+#About {
+    background: #522DBA;
+    padding: 250px 0 75px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#About .col-md-7:before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 598px;
+    background-image: url(../images/Abstractibly_PlaneElement.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    right: 50px;
+    top: -125px;
+    z-index: 1;
+    opacity: 0.25;
+}
+
+#About h1 {
+    color: #B9B7FF;
+}
+
+#About p {
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    #About {
+        padding: 324px 0 150px;
+        margin-bottom: 100px;
     }
 
-        #About h1:before {
-            content:'';
-            display: block;
-            width: 300px;
-            height: 598px;
-            background-image: url(../images/Abstractibly_PlaneElement.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            position: absolute;
-            right: 100%;
-            top: -125px;
-        }
-
-    #About p {
-        color: #fff;
+    #About .col-md-7:before {
+        content: '';
+        display: block;
+        width: 300px;
+        height: 598px;
+        background-image: url(../images/Abstractibly_PlaneElement.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        right: 100%;
+        top: -125px;
+        opacity: 1;
     }
+}
 
 #Projects {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+    #Projects h2 {
+        font-size: 3rem;
+        color: #522DBA;
+        opacity: 0.25;
+        margin-bottom: 25px;
+    }
+
+@media (min-width: 992px) {
+    #Projects h2 {
+        font-size: 5rem;
+    }
 }
 
 #Contact {
